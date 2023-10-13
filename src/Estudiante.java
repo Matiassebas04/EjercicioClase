@@ -1,20 +1,24 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Estudiante {
     private String matriculaNumero="";
     private int cedulaNumero=0;
     private String nombreEstudiante="";
-    private String materia1="";
-    private String materia2="";
-    private String materia3="";
+    private Materia materia1;
+    private Materia materia2;
+    private Materia materia3;
     public Estudiante(){
 
     }
-    public Estudiante(String nombreEstudiante, int cedulaNumero, String matriculaNumero, String materia1, String materia2, String matieria3){
-        this.nombreEstudiante = nombreEstudiante;
+
+    public Estudiante(String matriculaNumero, int cedulaNumero, String nombreEstudiante, Materia materia1, Materia materia2, Materia materia3) {
+        this.matriculaNumero = matriculaNumero;
         this.cedulaNumero = cedulaNumero;
-        this.matriculaNumero =matriculaNumero;
+        this.nombreEstudiante = nombreEstudiante;
         this.materia1 = materia1;
         this.materia2 = materia2;
-        this.materia3 = matieria3;
+        this.materia3 = materia3;
     }
 
     public String getMatriculaNumero() {
@@ -41,28 +45,38 @@ public class Estudiante {
         this.nombreEstudiante = nombreEstudiante;
     }
 
-    public String getMatieria1() {
+    public Materia getMateria1() {
         return materia1;
     }
 
-    public void setMatieria1(String matieria1) {
-        this.materia1 = matieria1;
+    public void setMateria1(Materia materia1) {
+        this.materia1 = materia1;
     }
 
-    public String getMatieria2() {
+    public Materia getMateria2() {
         return materia2;
     }
 
-    public void setMatieria2(String matieria2) {
-        this.materia2 = matieria2;
+    public void setMateria2(Materia materia2) {
+        this.materia2 = materia2;
     }
 
-    public String getMatieria3() {
+    public Materia getMateria3() {
         return materia3;
     }
 
-    public void setMatieria3(String matieria3) {
-        this.materia3 = matieria3;
+    public void setMateria3(Materia materia3) {
+        this.materia3 = materia3;
     }
+
+    public void imprimirTodoprof(){
+        String nomProfesor1=materia1.getProfesor1().getNombreProfesor();
+        System.out.println("El nombre del profesor correspondiente a la materia:"+materia1+" es:"+nomProfesor1);
+        String nomProfesor2=materia3.getProfesor2().getNombreProfesor();
+        System.out.println("El nombre del profesor 2 correspondiente a la materia:"+materia3+" es:"+nomProfesor2);
+    }
+
+    public void
+
 
 }
