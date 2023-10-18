@@ -70,12 +70,12 @@ public class Materia {
 
     public void ingresardatos(int i) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese el nombre del materia:"+i);
-        this.nombreMateria=sc.next();
-        System.out.println("Ingrese el nrc del materia:"+i);
-        this.codigo=sc.nextInt();
-        System.out.println("Ingrese el numero de horas del materia"+i);
-        this.numHoras=sc.nextInt();
+        System.out.println("Ingrese el nombre de la materia " + i + ":");
+        this.nombreMateria = sc.next();
+        System.out.println("Ingrese el código de la materia " + i + ":");
+        this.codigo = sc.nextInt();
+        System.out.println("Ingrese el número de horas de la materia " + i + ":");
+        this.numHoras = sc.nextInt();
     }
     public void ingresarProfesor(int i){
         if(i==1){

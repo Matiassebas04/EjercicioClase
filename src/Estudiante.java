@@ -69,14 +69,15 @@ public class Estudiante {
         this.materia3 = materia3;
     }
 
-    public void imprimirTodoprof(){
-        String nomProfesor1=materia1.getProfesor1().getNombreProfesor();
-        System.out.println("El nombre del profesor correspondiente a la materia:"+materia1+" es:"+nomProfesor1);
-        String nomProfesor2=materia3.getProfesor2().getNombreProfesor();
-        System.out.println("El nombre del profesor 2 correspondiente a la materia:"+materia3+" es:"+nomProfesor2);
+    public void imprimirTodoprof() {
+        String nomProfesor1 = materia1.getProfesor1().getNombreProfesor();
+        System.out.println("El nombre del profesor correspondiente a la materia 1 es: " + nomProfesor1);
+        String nomProfesor2 = materia2.getProfesor2().getNombreProfesor();
+        System.out.println("El nombre del profesor correspondiente a la materia 2 es: " + nomProfesor2);
+        String nomProfesor3 = materia3.getProfesor3().getNombreProfesor();
+        System.out.println("El nombre del profesor correspondiente a la materia 3 es: " + nomProfesor3);
     }
 
-    public void
 
 
 }
